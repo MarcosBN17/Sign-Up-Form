@@ -17,7 +17,7 @@
     <div id="form">
         <p>This is not a real online service! Sign-Up now to get started!</p>
         <p>Let's start your ride!</p>
-        <form action="post">
+        <form action="#">
             <h2>Let's register!</h2>
             <fieldset class="form-body">
                 <fieldset>
@@ -27,7 +27,7 @@
                     <input type="email" id="email">
                     <span></span>
                     <label for="password">Password</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" required>
                     <span></span>
                 </fieldset>
                 <fieldset>
@@ -36,11 +36,12 @@
                     <label for="phoneNumber">Phone Number</label>
                     <input type="tel" id="phoneNumber">
                     <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword">
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
                 </fieldset>
             </fieldset>
             <button type="submit">Create Account</button>
         </form>
+        <span class="psw">Already have an account?<a href="#">Log-In</a></span>
     </div>
 </body>
 </html>

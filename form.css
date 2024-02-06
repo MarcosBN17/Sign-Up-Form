@@ -1,4 +1,5 @@
 @import url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+@import url(./font/Norse-Bold.otf);
 
 body {
     display: flex;
@@ -48,12 +49,15 @@ body {
 .odin-text {
     display: block;
     margin: 10px;
+    font-family: "Norse", Times, serif;
 }
 
 /*FORM*/
 
 #form {
-    background-color: white;
+    background-color: rgba(126, 127, 132, 255);
+    background-image: url(./images/bike.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     display: flex;
@@ -63,7 +67,9 @@ body {
 }
 
 #form p{
-    color: black;
+    color: white;
+    font-weight: bold;
+    font-size: large;
     margin: 0.5rem 0rem;
     padding: 0px 20px;
     display: block;
@@ -81,7 +87,7 @@ body {
 }
 
 #form h2{
-    color: black;
+    color: white;
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -98,11 +104,55 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    font-weight: bold;
+}
+
+input {
+    min-width: 200px;
+    margin: 0px 0px 1.5rem 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input[type="email" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input[type="password" i] {
+    -webkit-text-security: disc !important;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input[type="tel" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+    direction: ltr;
+}
+
+button[type="submit"] {
+    width: 150px;
+    height: 40px;
+    align-self: center;
+    box-shadow: 3px 3px 10px rgb('138', '130', '130');
 }
 
 #form label{
-    color: black;
+    color: white;
     cursor: default;
+    font-size: large;
+}
+
+#form span[class="psw"]{
+    color: white;
+    font-size:medium;
+    font-weight: bold;
 }
 
 #form fieldset {
