@@ -39,9 +39,11 @@
                     <input type="password" name="confirmPassword" id="confirmPassword" required>
                 </fieldset>
             </fieldset>
-            <button type="submit">Create Account</button>
+            <span id="passwordMatchMessage"></span>
+            <button type="submit" onclick="verifyPassword()">Create Account</button>
+            <span class="psw">Already have an account?<a href="#">Log-In</a></span>
         </form>
-        <span class="psw">Already have an account?<a href="#">Log-In</a></span>
+        
     </div>
 </body>
 </html>
